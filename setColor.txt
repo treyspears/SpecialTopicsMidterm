@@ -1,0 +1,12 @@
+void main(float leftShiftAmount) {
+    
+    vec2 id = get_global_id();
+    float result = 0.0;
+    
+    for( int i = 0; i < 25600; ++i )
+    {
+        result = ( float( i ) * 0.01 ) * leftShiftAmount;
+    }
+    
+    out_float = result;
+} 
